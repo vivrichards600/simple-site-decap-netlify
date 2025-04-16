@@ -23,7 +23,7 @@ Perfect for clubs, small businesses, and brochure sites that need to be updated 
 
 - ⚡ **Instant editing** with Decap CMS (content stored in Markdown)
 - 📷 **Image uploads** via Netlify Media
-- 🎨 **Global site branding**: Customize your site name, colors, and SEO metadata
+- 🎨 **Global site branding**: Customise your site name, colors, and SEO metadata
 - 🖼 **Homepage slideshow**: Easily update images, captions, and links
 - 🐦 **Optional Twitter feed**: Display recent tweets on the homepage
 - 📍 **Google Maps embed**: Add your location to the contact page
