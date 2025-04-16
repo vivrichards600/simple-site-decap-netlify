@@ -1,6 +1,3 @@
 [build]
 command = "node scripts/prebuild.js && node scripts/generate-news-index.js && node scripts/generate-slideshow-index.js"
 publish = "."
-
-[[plugins]]
-package = "@netlify/plugin-functions-install-core"
