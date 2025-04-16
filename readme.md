@@ -10,23 +10,24 @@ Perfect for clubs, small businesses, and brochure sites that need to be updated 
 
 ---
 
-## 🚀 One-Click Deploy
+## 🚀 Quick Start
 
-Want to use this template for your own site?
+1. **Fork or clone** this repo
+2. **Link it to Netlify** via your dashboard
+3. **Enable Identity + Git Gateway** for Decap CMS
+4. Visit `/admin` to edit your site content
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vivrichards600/simple-site-decap-netlify)
-
-Click the button above to deploy the template to your Netlify account with just a few clicks.
+---
 
 ## 🛠 Features
 
 - ⚡ **Instant editing** with Decap CMS (content stored in Markdown)
 - 📷 **Image uploads** via Netlify Media
 - 🎨 **Global site branding**: Customize your site name, colors, and SEO metadata
-- 🖼 **Homepage slideshow**: Easily update images, captions, and links for the homepage slideshow
+- 🖼 **Homepage slideshow**: Easily update images, captions, and links
 - 🐦 **Optional Twitter feed**: Display recent tweets on the homepage
-- 📍 **Google Maps embed**: Easily add a Google Maps location to the contact page
-- 📈 **Built-in Google Analytics**: Just drop your Google Analytics ID in the CMS to start tracking
+- 📍 **Google Maps embed**: Add your location to the contact page
+- 📈 **Google Analytics** support: Just drop in your ID via the CMS
 
 ---
 
@@ -52,18 +53,18 @@ Click the button above to deploy the template to your Netlify account with just 
 
 ## 🧑‍💻 Development & Customization
 
-1. **Clone this repo**
-2. **Customize the styles** in `styles.css`
-3. **Modify layout or JS** if needed
-4. **Deploy to Netlify** and connect a domain
-5. **Update content** via Decap CMS at `/admin`
+1. Clone this repo
+2. Customize styles in `styles.css`
+3. Modify layout or JS if needed
+4. Push changes to GitHub and deploy via Netlify
+5. Manage your content via `/admin`
 
 ---
 
 ## 🧠 Notes
 
-- You'll need to enable **Netlify Identity** and **Git Gateway** for Decap CMS to function correctly.
-- **Everything is editable via the CMS**, so no coding is required once it’s deployed. You can manage content like news, slideshows, and more directly from the admin panel.
+- Make sure **Netlify Identity** and **Git Gateway** are enabled in your Netlify dashboard.
+- Once deployed, all content is editable from the CMS — no coding required for updates!
 
 ---
 
