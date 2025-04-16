@@ -1,0 +1,68 @@
+backend:
+  name: git-gateway
+  branch: main
+
+logo_url: /images/logo.jpg
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "news"
+    label: "News"
+    folder: "content/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "slideshow"
+    label: "Slideshow"
+    folder: "content/slideshow"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
+      - { label: "Alt Text", name: "alt", widget: "string" }
+      - { label: "Caption Text", name: "text", widget: "string" }
+      - { label: "Link (optional)", name: "link", widget: "string", required: false }
+
+  - name: "settings"
+    label: "Site Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: "Homepage"
+        name: "home"
+        file: "content/settings/home.md"
+        fields:
+          - { label: "Number of News Items to Show", name: "news_limit", widget: "number", min: 1, max: 10, default: 3, hint: "Controls how many recent news items appear on the homepage" }
+          - { label: "Twitter Handle", name: "twitter_handle", widget: "string", required: false, hint: "Just your handle, e.g. RDConsultingLtd" }
+          - { label: "Show Twitter Feed", name: "show_twitter", widget: "boolean", required: false, default: true,   hint: "Display the Twitter feed on the right of new feed. When disabled, news items will take full width of page." }
+
+      - label: "Contact Page"
+        name: "contact"
+        file: "content/settings/contact.md"
+        fields:
+          - { label: "Address Line 1", name: "address_line_1", widget: "string" }
+          - { label: "Address Line 2", name: "address_line_2", widget: "string", required: false }
+          - { label: "Address Line 3", name: "address_line_3", widget: "string", required: false }
+          - { label: "City", name: "city", widget: "string" }
+          - { label: "Postcode", name: "postcode", widget: "string" }
+          - { label: "Phone Number", name: "phone", widget: "string" }
+          - { label: "Facebook Handle", name: "facebook_handle", widget: "string", required: false }
+          - { label: "Twitter Handle", name: "twitter_handle", widget: "string", required: false }
+          - { label: "Google Maps Embed Code", name: "google_maps_location", widget: "text", required: false, hint: "Paste the full Google Maps embed code here (the entire iframe code provided by Google)." }
+      - label: "Global Settings"
+        name: "global"
+        file: "content/settings/global.md"
+        fields:
+          - { label: "Site Name", name: "site_name", widget: "string", default: "Rubber Duck Consulting", hint: "Used in page titles, SEO, and header" }
+          - { label: "Site Description", name: "description", widget: "text", required: false, hint: "Used in meta tags and social sharing" }
+          - { label: "Author", name: "author", widget: "string", default: "Rubber Duck Consulting", hint: "Used in meta author and copyright" }
+          - { label: "Google Analytics Id", name: "google_analytics_id", widget: "string", hint: "Used to set your Google Anayltics tracking Id" }
+          - { label: "Primary Colour", name: "primary_color", widget: "color", default: "#292b2a", hint: "Main theme colour (e.g. buttons, links)" }
+          - { label: "Secondary Colour", name: "secondary_color", widget: "color", default: "#dbee08", hint: "Accent colour for background or borders" }

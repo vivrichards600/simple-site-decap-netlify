@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta tags to be updated dynamically -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+    <!-- Styles and Fonts -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Teko:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <a href="index.html"><img alt="site logo" src="images/logo.jpg"/></a>
+    </div>
+    <h1 id="site-title"><a href="index.html">Site Title</a></h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div id="slideshow"></div> <!-- Dynamically load images here -->
+    <h2 id="slideshow-caption"></h2> <!-- Caption for the image -->
+    <div id="slideshow-link" style="position:absolute; top:65%; left:50%; transform:translate(-50%, 0); z-index:2;"></div> <!-- Link button -->
+</section>
+
+<section class="section">
+    <h2 id="news">Latest</h2>
+
+    <div class="news-layout">
+        <div id="news-container" class="news-items"></div>
+
+        <!-- Twitter feed container -->
+        <div class="twitter-container" style="display: none;">
+            <!-- Twitter Timeline will be inserted here dynamically by JavaScript -->
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    &copy; <span id="site-year">2025</span> <span id="site-footer-name">Site Name</span> |
+    <a href="admin">Admin</a> |
+    Designed by <a href="https://rubberduckconsulting.co.uk" target="_blank">Rubber Duck Consulting</a>
+</footer>
+<script src="scripts/index.js"></script>
+<script src="scripts/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>

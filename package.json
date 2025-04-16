@@ -1,0 +1,7 @@
+{
+  "name": "site-template-decap-netlify",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node scripts/generate-news-index.js"
+  }
+}

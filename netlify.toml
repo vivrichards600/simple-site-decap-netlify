@@ -1,0 +1,6 @@
+[build]
+command = "node scripts/generate-news-index.js && node scripts/generate-slideshow-index.js"
+publish = "."
+
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"
