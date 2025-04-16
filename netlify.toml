@@ -1,5 +1,5 @@
 [build]
-command = "node scripts/generate-news-index.js && node scripts/generate-slideshow-index.js"
+command = "node scripts/prebuild.js && node scripts/generate-news-index.js && node scripts/generate-slideshow-index.js"
 publish = "."
 
 [[plugins]]
